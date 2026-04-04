@@ -6,12 +6,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../../Img/simbolonegro.png';
 
 function Header() {
     return (
         <Navbar expand="lg" className="header1">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Navbar.Brand href="#">
+                    <img src={logo} width="50" height="50" className="d-inline-block align-top" alt="React Bootstrap logo" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -36,13 +39,7 @@ function Header() {
                         </Nav.Link>
                     </Nav>
                     <Form className="d-flex">
-                        <Form.Control
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                        <Button variant="outline-success">Search</Button>
+                        <Button className='contacto1'>¡Contáctanos!</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>

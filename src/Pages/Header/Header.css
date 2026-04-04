@@ -1,3 +1,34 @@
 .header1{
-    background: aqua;
+   background: linear-gradient(
+  90deg,
+  #8c6a1c 0%,
+  #d4af37 20%,
+  #f7e27b 40%,
+  #ffd700 50%,
+  #f7e27b 60%,
+  #d4af37 80%,
+  #8c6a1c 100%
+);
+}
+
+.header1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+}
+
+.contacto1 {
+  background: #000000;
+  color: #f7e27b;
+  border-color: #f7e27b;
+}
+
+.contacto1:hover {
+  background: #ffee9b;
+  color: #000000;
+  border-color: #000000;
 }
