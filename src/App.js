@@ -4,8 +4,8 @@ import Footer from "./Pages/Footer/Footer";
 
 function App() {
   return (
-    <div className="app-container sulphur-point-regular">
-      <div className="">
+    <div className="app-container sulphur-point-bold">
+      <div className="font-size: 20px">
         <Header />
       </div>
       <div className="content">

@@ -27,8 +27,130 @@
   border-color: #f7e27b;
 }
 
+.links1{
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s ease;
+  background-color: #000000;
+  border-radius: 999px; /* forma tipo cápsula */
+  padding: 1px; /* espacio interno */
+  margin: 0 2px; /* separación entre links */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* espacio icono-texto */
+}
+
+/* Hover */
+.links1:hover {
+  color: #f7e27b;
+  background-color: #000000; /* leve cambio */
+}
+
+/* Activo */
+.links1.active {
+  color: #f7e27b !important;
+}
+
+/* Línea abajo */
+.links1.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  color: #f7e27b;
+}
+
+.links2{
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s ease;
+  background-color: #000000;
+  border-radius: 50%; /* 🔥 círculo perfecto */
+  width: 30px;   /* mismo ancho */
+  height: 30px;  /* mismo alto */
+  margin: 0 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* centra el icono */
+}
+
+/* Hover */
+.links2:hover {
+  color: #f7e27b;
+  background-color: #000000; /* leve cambio */
+}
+
+/* Activo */
+.links2.active {
+  color: #f7e27b !important;
+}
+
+.dropdown-menu {
+  background-color: #000000;
+  border-radius: 10px;
+  border: 1px solid #f7e27b;
+}
+
+/* 🔥 Cada opción */
+.dropdown-item {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.dropdown-item:hover {
+  color: #f7e27b;
+  background-color: #111;
+}
+
+/* 🔥 Hover correcto */
+.navbar .dropdown-toggle.links1:hover {
+  color: #f7e27b !important;
+  background-color: #111;
+}
+
+/* 🔥 Dropdown igual que links1 */
+.navbar-nav .nav-link.links1.dropdown-toggle {
+  color: #ffffff !important;
+  background-color: #000000;
+  border-radius: 999px;
+
+}
+
+/* 🔥 Hover correcto */
+.navbar-nav .nav-link.links1.dropdown-toggle:hover {
+  color: #f7e27b !important;
+  background-color: #111 !important;
+}
+
+/* 🔥 Cuando está abierto */
+.navbar-nav .nav-link.links1.dropdown-toggle.show {
+  color: #f7e27b !important;
+}
+
+/* 💀 nuclear option */
+.navbar-nav .dropdown-toggle {
+  color: #ffffff !important;
+}
+
+.navbar-nav .dropdown-toggle:hover {
+  color: #f7e27b !important;
+}
+
+/* ❌ eliminar flechita de bootstrap */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
 .contacto1:hover {
   background: #ffee9b;
   color: #000000;
   border-color: #000000;
+}
+
+.separador1 {
+  background-color: #f7e27b;
 }
