@@ -1,0 +1,84 @@
+.home {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+/* 🔥 HERO */
+.hero-section {
+  height: 90vh;
+  background: url("../../Img/simboloblanco.png") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-text {
+  margin: 20px 0;
+  color: #d4af37;
+}
+
+/* 🔥 BOTÓN DORADO */
+.gold-btn {
+  background: linear-gradient(90deg, #c9a44c, #f5d37a);
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.gold-btn:hover {
+  background: linear-gradient(90deg, #f5d37a, #c9a44c);
+}
+
+/* 🔥 WELCOME */
+.welcome-section {
+  padding: 80px 0;
+}
+
+.welcome-section span {
+  color: #d4af37;
+}
+
+/* 🔥 SECTIONS */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 🔥 PRODUCTOS */
+.product-card {
+  background: #1a1a1a;
+  border: none;
+  text-align: center;
+}
+
+.product-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* 🔥 TESTIMONIOS */
+.testimonials {
+  padding: 80px 0;
+}
+
+.testimonial-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
