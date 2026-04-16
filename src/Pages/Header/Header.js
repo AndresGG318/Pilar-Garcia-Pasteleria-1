@@ -13,7 +13,7 @@ import { faWhatsapp, faInstagram, faSquareFacebook } from '@fortawesome/free-bra
 
 function Header() {
     return (
-        <Navbar expand="lg" className="header1">
+        <Navbar expand="lg" className="header1 fixed-top">
             <Container fluid>
                 <Navbar.Brand href="#">
                     <img src={logolado} width="100%" height="50" className="d-inline-block align-top" alt="React Bootstrap logo" />
