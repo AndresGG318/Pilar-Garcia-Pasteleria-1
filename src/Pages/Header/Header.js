@@ -21,7 +21,7 @@ function Header() {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-                        <Nav.Link className='links1' href="#action1" >
+                        <Nav.Link className='links1' href="#Inicio">
                                 <FontAwesomeIcon  icon={faHouse}/>Inicio
                         </Nav.Link>
                         <NavDropdown className='nav-link dropdown-toggle links1' title={<><FontAwesomeIcon icon={faImages} style={{ marginRight: '7px' }} />Galería</>} id="navbarScrollingDropdown">
