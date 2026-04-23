@@ -6,6 +6,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logolado from '../../Img/logoladoblanco.png';
+import Tortas from '../../Img/TORTAPNG.png';
+import Cupkakes from '../../Img/CUPCAKESPNG.png';
+import Galletas from '../../Img/GALLETASPNG.png';
+import Amasijos from '../../Img/AMASIJOSPNG.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faImages } from '@fortawesome/free-regular-svg-icons';
 import { faCakeCandles, faFilePen, faUsers } from '@fortawesome/free-solid-svg-icons';
@@ -25,23 +29,23 @@ function Header() {
                                 <FontAwesomeIcon  icon={faHouse}/>Inicio
                         </Nav.Link>
                         <NavDropdown className='nav-link dropdown-toggle links1' title={<><FontAwesomeIcon icon={faImages} style={{ marginRight: '7px' }} />Galería</>} id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action2">Tortas</NavDropdown.Item>
+                            <NavDropdown.Item href="#Tortas"><img src={Tortas} alt="Galería" className="icono-nav" /> Tortas</NavDropdown.Item>
                             <NavDropdown.Divider className='separador1' />
-                            <NavDropdown.Item href="#action3">Cupckaes</NavDropdown.Item>
+                            <NavDropdown.Item href="#Cupcakes"><img src={Cupkakes} alt="Galería" className="icono-nav" /> Cupcakes</NavDropdown.Item>
                             <NavDropdown.Divider className='separador1' />
-                            <NavDropdown.Item href="#action4">Galletas</NavDropdown.Item>
+                            <NavDropdown.Item href="#Galletas"><img src={Galletas} alt="Galería" className="icono-nav" /> Galletas</NavDropdown.Item>
                             <NavDropdown.Divider className='separador1' />
-                            <NavDropdown.Item href="#action5">Amasijos</NavDropdown.Item>
+                            <NavDropdown.Item href="#Amasijos"><img src={Amasijos} alt="Galería" className="icono-nav" /> Amasijos</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link className='links1' href="#action6"><FontAwesomeIcon icon={faCakeCandles} />Sabores</Nav.Link>
-                        <Nav.Link className='links1' href="#action7"><FontAwesomeIcon icon={faFilePen} />Blog</Nav.Link>
-                        <Nav.Link className='links1' href="#action8"><FontAwesomeIcon icon={faUsers} />Nosotros</Nav.Link>
+                        <Nav.Link className='links1' href="#Sabores"><FontAwesomeIcon icon={faCakeCandles} />Sabores</Nav.Link>
+                        <Nav.Link className='links1' href="#Blog"><FontAwesomeIcon icon={faFilePen} />Blog</Nav.Link>
+                        <Nav.Link className='links1' href="#Nosotros"><FontAwesomeIcon icon={faUsers} />Nosotros</Nav.Link>
                         
                     </Nav>
-                    <Nav.Link className='links2' href="#action9"><FontAwesomeIcon icon={faWhatsapp} /></Nav.Link>
-                    <Nav.Link className='links2' href="#action10"><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
-                    <Nav.Link className='links2 me-3' href="#action11"><FontAwesomeIcon icon={faSquareFacebook} /></Nav.Link>
-                    <Button className='contacto1 d-flex'>¡Contáctanos!</Button>
+                    <Nav.Link className='links2' href=""><FontAwesomeIcon icon={faWhatsapp} /></Nav.Link>
+                    <Nav.Link className='links2' href=""><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
+                    <Nav.Link className='links2 me-3' href=""><FontAwesomeIcon icon={faSquareFacebook} /></Nav.Link>
+                    <Button className='contacto1 d-flex' href="#Formulario">¡Contáctanos!</Button>
                     
                 </Navbar.Collapse>
             </Container>

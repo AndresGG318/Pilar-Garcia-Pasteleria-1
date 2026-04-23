@@ -35,14 +35,32 @@
 
 /* 🔥 BOTÓN DORADO */
 .gold-btn {
-  background: linear-gradient(90deg, #c9a44c, #f5d37a);
+  background: linear-gradient(
+  90deg,
+  #8c6a1c 0%,
+  #d4af37 20%,
+  #f7e27b 40%,
+  #ffd700 50%,
+  #f7e27b 60%,
+  #d4af37 80%,
+  #8c6a1c 100%
+);
   border: none;
   color: black;
   font-weight: bold;
 }
 
 .gold-btn:hover {
-  background: linear-gradient(90deg, #f5d37a, #c9a44c);
+  background: linear-gradient(
+  90deg,
+  #8c6a1c 0%,
+  #d4af37 20%,
+  #f7e27b 40%,
+  #ffd700 50%,
+  #f7e27b 60%,
+  #d4af37 80%,
+  #8c6a1c 100%
+);
 }
 
 /* 🔥 WELCOME */
