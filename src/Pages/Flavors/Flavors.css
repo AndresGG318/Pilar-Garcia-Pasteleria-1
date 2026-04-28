@@ -1,0 +1,39 @@
+.cake-container {
+  width: 220px;
+  margin: 0 auto;
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+}
+
+/* Parte superior (cubierta) */
+.cake-top {
+  height: 50px;
+  border-radius: 20px 20px 10px 10px;
+  transition: 0.4s;
+}
+
+/* Relleno */
+.cake-filling {
+  height: 35px;
+  transition: 0.4s;
+}
+
+/* Base */
+.cake-base {
+  height: 70px;
+  border-radius: 0 0 20px 20px;
+  transition: 0.4s;
+}
+
+/* Botones */
+.btn-group-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+button.btn {
+  border-radius: 20px;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+}

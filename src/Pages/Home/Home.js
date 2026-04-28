@@ -1,7 +1,10 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "./Home.css";
+import { useNavigate } from "react-router-dom"; // 👈 IMPORTANTE
 
 const Home = () => {
+  const navigate = useNavigate(); // 👈 hook de navegación
+
   return (
     <div className="home">
 
@@ -10,11 +13,19 @@ const Home = () => {
         <Container>
           <Row>
             <Col md={6}>
-              <h1 className="hero-title">Exquisite Cakes & Pastries</h1>
+              <h1 className="hero-title">El Arte de Hornear Felicidad</h1>
               <p className="hero-text">
-                Deliciously crafted for all of your special moments.
+                Horneamos con amor para que cada bocado cuente una historia.
               </p>
-              <Button className="gold-btn">Explore Menu</Button>
+
+              {/* 👇 SOLO ESTO CAMBIA */}
+              <Button 
+                className="gold-btn"
+                onClick={() => navigate("/Tortas")}
+              >
+                Ver Nuestro Menú
+              </Button>
+
             </Col>
           </Row>
         </Container>
@@ -27,11 +38,19 @@ const Home = () => {
             <img src="/img/cupcake.png" alt="cupcake" className="img-fluid rounded"/>
           </Col>
           <Col md={6}>
-            <h2>Welcome to <span>Sweet Delights</span></h2>
+            <h2>Bienvenido a <span>Pilar García Pastelería</span></h2>
             <p>
-              Crafting delicious moments with elegance and perfection.
+              Explora nuestros sabores y da vida a una torta única, diseñada especialmente para ti. 
             </p>
-            <Button className="gold-btn">Learn More</Button>
+
+            {/* 👇 SOLO ESTO CAMBIA */}
+            <Button 
+              className="gold-btn"
+              onClick={() => navigate("/sabores")}
+            >
+              Explora y diseña
+            </Button>
+
           </Col>
         </Row>
       </Container>

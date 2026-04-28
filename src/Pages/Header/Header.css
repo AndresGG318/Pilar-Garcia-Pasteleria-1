@@ -161,3 +161,53 @@
   margin-right: 7px;
   object-fit: contain;
 }
+
+/* Quitar azul cuando está activo */
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus {
+  background-color: transparent !important;
+  color: #f7e27b !important;
+}
+
+/* Si quieres que el item actual quede negro igual */
+.dropdown-item.active:hover {
+  background-color: #111 !important;
+}
+
+/* ========================= */
+/* REDES SOCIALES */
+/* ========================= */
+
+.links2,
+.links2:focus,
+.links2:active,
+.links2.active,
+.links2.show {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.links2:hover {
+  background-color: #000000 !important;
+  color: #f7e27b !important;
+}
+
+.contacto1,
+.contacto1:focus,
+.contacto1:active,
+.contacto1.active,
+.contacto1.show {
+  background-color: #000000 !important;
+  color: #f7e27b !important;
+  border-color: #f7e27b !important;
+  box-shadow: none !important;
+}
+
+.contacto1:hover {
+  background-color: #ffee9b !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
